@@ -1,0 +1,18 @@
+.container {
+  height: 90vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(238, 156, 167, 0.5),
+      rgba(255, 221, 225, 0.5)
+    ),
+    url(../images/office.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
