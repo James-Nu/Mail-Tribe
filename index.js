@@ -31,7 +31,7 @@ require("./routes/biilingRoutes")(app);
 
 //this runs only in production
 
-if (process.env.PORT === "production") {
+if (process.env.NODE_ENV === "production") {
   //ensures express will serve up production assets(main.css, main.js)
   app.use(express.static("client/build"));
 
