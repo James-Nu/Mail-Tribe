@@ -4,9 +4,9 @@ import { connect } from "react-redux";
 import * as actions from "../actions"; //take all the action creators and assign them to the object actions.
 
 import Header from "./Header";
-import Dashboard from "./Dashboard";
-import SurveyNew from "./SurveyNew";
 import Landing from "./Landing";
+import Dashboard from "./Dashboard";
+import SurveyNew from "./surveys/SurveyNew";
 
 class App extends React.Component {
   componentDidMount() {
@@ -21,7 +21,7 @@ class App extends React.Component {
             <Header />
             <Route path="/" exact component={Landing} />
             <Route path="/surveys" exact component={Dashboard} />
-            <Route path="surveys/new" exact component={SurveyNew} />
+            <Route path="/surveys/new" exact component={SurveyNew} />
           </div>
         </BrowserRouter>
       </div>
